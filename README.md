@@ -4,7 +4,9 @@ It is necessary to create a component `<Profile>`, with which we could display
 information about the user of the social network. User data is stored in the
 [user.json](./user.json) file.
 
+<div align="center">
 ![Preview of the Profile component](./preview.png)
+</div>
 
 ## Description of the `<Profile>` component
 
@@ -69,7 +71,9 @@ prop. For example, uploads to the cloud by file type, web page visits
 by users from different countries, financial expenses, etc. Statistics data are
 in the file [data.json](./data.json).
 
+<div align="center">
 ![Preview of the Statistics component](./preview.jpg )
+</div>
 
 ## Description of the component
 
@@ -125,7 +129,9 @@ It is necessary to create a component `<FriendList>`, with which we could
 display information about the user's friends. Information about friends is stored in
 the [friends.json](./friends.json).
 
+<div align="center">
 ![Preview of the FriendList component](./preview2.jpg )
+</div>
 
 ## Description of the `<FriendList>` component
 
@@ -174,7 +180,9 @@ import friends from 'path/to/friends.json';
 It is necessary to create a transaction history component in the personal account of the Internet
 bank.
 
+<div align="center">
 ![Preview of the TransactionHistory component](./preview3.jpg)
+</div>
 
 The data for the list is available in JSON format in a file
 [transactions.json](./transactions.json). This is an array of objects, each object
