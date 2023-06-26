@@ -6,7 +6,6 @@ export const ProfileContainer = styled(Box)` // Використовуємо Box
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(224, 233, 240);
   height: 100vh;
 `;
 
