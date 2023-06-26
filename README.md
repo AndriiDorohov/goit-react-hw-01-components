@@ -5,7 +5,7 @@ information about the user of the social network. User data is stored in the
 [user.json](./user.json) file.
 
 <div align="center">
-    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/preview.png"/>
+    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.png"/>
 </div>
 
 ## Description of the `<Profile>` component
@@ -72,7 +72,7 @@ by users from different countries, financial expenses, etc. Statistics data are
 in the file [data.json](./data.json).
 
 <div align="center">
-    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/preview.jpg"/>
+    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.jpg"/>
 </div>
 
 ## Description of the component
@@ -130,7 +130,7 @@ display information about the user's friends. Information about friends is store
 the [friends.json](./friends.json).
 
 <div align="center">
-    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/preview2.jpg"/>
+    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview2.jpg"/>
 </div>
 
 ## Description of the `<FriendList>` component
@@ -181,7 +181,7 @@ It is necessary to create a transaction history component in the personal accoun
 bank.
 
 <div align="center">
-    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/preview3.jpg"/>
+    <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview3.jpg"/>
 </div>
 
 The data for the list is available in JSON format in a file
