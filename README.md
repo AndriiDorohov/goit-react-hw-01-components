@@ -66,10 +66,10 @@ import user from 'path/to/user.json;
 
 # Statistics Section
 
-Create a component `<Statistics>` that would display statistics on the transmitted
-prop. For example, uploads to the cloud by file type, web page visits
-by users from different countries, financial expenses, etc. Statistics data are
-in the file [data.json](./data.json).
+Create a component `<Statistics>` that would display statistics on the
+transmitted prop. For example, uploads to the cloud by file type, web page
+visits by users from different countries, financial expenses, etc. Statistics
+data are in the file [data.json](./src/data.json).
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.jpg"/>
@@ -77,40 +77,40 @@ in the file [data.json](./data.json).
 
 ## Description of the component
 
-The component must accept two passes `title` and `stats`, which specify
-the title and the statistics object.
+The component must accept two passes `title` and `stats`, which specify the
+title and the statistics object.
 
-- `title` is optional, and if it is not passed, the markup should not be rendered
-the header `<h2>`.
-- `stats` - an array of objects containing information about the statistics element. Can
-have an arbitrary number of elements.
-- You can skip the background color of the statistics element in the design, or create
-a function to generate a random color.
+- `title` is optional, and if it is not passed, the markup should not be
+  rendered the header `<h2>`.
+- `stats` - an array of objects containing information about the statistics
+  element. Can have an arbitrary number of elements.
+- You can skip the background color of the statistics element in the design, or
+  create a function to generate a random color.
 
 The component should create a DOM element of the following structure.
 
 ```html
 <section class="statistics">
-<h2 class="title">Upload stats</h2>
+  <h2 class="title">Upload stats</h2>
 
-<ul class="stat-list">
-<li class="item">
-<span class="label">.docx</span>
-<span class="percentage">4%</span>
-</li>
-<li class="item">
-<span class="label">.mp3</span>
-<span class="percentage">14%</span>
-</li>
-<li class="item">
-<span class="label">.pdf</span>
-<span class="percentage">41%</span>
-</li>
-<li class="item">
-<span class="label">.mp4</span>
-<span class="percentage">12%</span>
-</li>
-</ul>
+  <ul class="stat-list">
+    <li class="item">
+      <span class="label">.docx</span>
+      <span class="percentage">4%</span>
+    </li>
+    <li class="item">
+      <span class="label">.mp3</span>
+      <span class="percentage">14%</span>
+    </li>
+    <li class="item">
+      <span class="label">.pdf</span>
+      <span class="percentage">41%</span>
+    </li>
+    <li class="item">
+      <span class="label">.mp4</span>
+      <span class="percentage">12%</span>
+    </li>
+  </ul>
 </section>
 ```
 
@@ -126,8 +126,8 @@ import data from '/path/to/data.json';
 # Friends list
 
 It is necessary to create a component `<FriendList>`, with which we could
-display information about the user's friends. Information about friends is stored in
-the [friends.json](./friends.json).
+display information about the user's friends. Information about friends is
+stored in the [friends.json](./src/friends.json).
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview2.jpg"/>
@@ -141,7 +141,7 @@ The component should create a DOM of the following structure.
 
 ```html
 <ul class="friend-list">
-<!-- Arbitrary number of FriendListItem -->
+  <!-- Arbitrary number of FriendListItem -->
 </ul>
 ```
 
@@ -153,8 +153,8 @@ The component must accept multiple props:
 - `name` - friend's name
 - `isOnline` - a bul signaling the status of a friend, online or not.
 
-Depending on the prop `isOnline`, the background color `span.status` should change. This
-can be done through a different CSS class or Styled Components.
+Depending on the prop `isOnline`, the background color `span.status` should
+change. This can be done through a different CSS class or Styled Components.
 
 The component should create a DOM of the following structure.
 
@@ -174,19 +174,18 @@ import friends from 'path/to/friends.json';
 <FriendList friends={friends} />,
 ```
 
-
 # Transaction History
 
-It is necessary to create a transaction history component in the personal account of the Internet
-bank.
+It is necessary to create a transaction history component in the personal
+account of the Internet bank.
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview3.jpg"/>
 </div>
 
 The data for the list is available in JSON format in a file
-[transactions.json](./transactions.json). This is an array of objects, each object
-describes one transaction with the following properties:
+[transactions.json](./src/transactions.json). This is an array of objects, each
+object describes one transaction with the following properties:
 
 - `id' — unique transaction ID
 - `type' — transaction type
@@ -195,10 +194,10 @@ describes one transaction with the following properties:
 
 ## Description of the `<TransactionHistory>` component
 
-It is necessary to create a component `<TransactionHistory>` that accepts one prop
-`items` is an array of transaction objects from 'transactions.json`. The component creates
-a table layout. Each transaction is a row of a table. The example shows
-the markup of two transactions.
+It is necessary to create a component `<TransactionHistory>` that accepts one
+prop `items` is an array of transaction objects from 'transactions.json`. The
+component creates a table layout. Each transaction is a row of a table. The
+example shows the markup of two transactions.
 
 ```html
 <table class="transaction-history">
