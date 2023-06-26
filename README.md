@@ -2,7 +2,7 @@
 
 It is necessary to create a component `<Profile>`, with which we could display
 information about the user of the social network. User data is stored in the
-[user.json](./user.json) file.
+[user.json](./src/user.json) file.
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.png"/>
