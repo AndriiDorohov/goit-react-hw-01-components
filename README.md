@@ -118,3 +118,52 @@ import data from '/path/to/data.json';
 <Statistics title="Upload stats" stats={data} />;
 <Statistics stats={data} />;
 ```
+
+# Friends list
+
+It is necessary to create a component `<FriendList>`, with which we could
+display information about the user's friends. Information about friends is stored in
+the [friends.json](./friends.json).
+
+![Preview of the FriendList component](./preview2.jpg )
+
+## Description of the `<FriendList>` component
+
+The component must accept a single `friends` prop - an array of friends objects.
+
+The component should create a DOM of the following structure.
+
+```html
+<ul class="friend-list">
+<!-- Arbitrary number of FriendListItem -->
+</ul>
+```
+
+## Description of the `<FriendListItem>` component
+
+The component must accept multiple props:
+
+- `avatar' - link to the avatar
+- `name` - friend's name
+- `isOnline` - a bul signaling the status of a friend, online or not.
+
+Depending on the prop `isOnline`, the background color `span.status` should change. This
+can be done through a different CSS class or Styled Components.
+
+The component should create a DOM of the following structure.
+
+```html
+<li class="item">
+  <span class="status"></span>
+  <img class="avatar" src="" alt="User avatar" width="48" />
+  <p class="name"></p>
+</li>
+```
+
+## Usage example
+
+```js
+import friends from 'path/to/friends.json';
+
+<FriendList friends={friends} />,
+```
