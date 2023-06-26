@@ -1,5 +1,5 @@
 import Profile from './Profile/Profile';
-import user from '../user.json'
+import user from '../data/user.json'
 import { GlobalStyle } from './GlobalStyle';
 
 export default function App () {

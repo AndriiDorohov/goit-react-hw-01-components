@@ -2,7 +2,7 @@
 
 It is necessary to create a component `<Profile>`, with which we could display
 information about the user of the social network. User data is stored in the
-[user.json](./src/user.json) file.
+[user.json](./src/data/user.json) file.
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.png"/>
@@ -69,7 +69,7 @@ import user from 'path/to/user.json;
 Create a component `<Statistics>` that would display statistics on the
 transmitted prop. For example, uploads to the cloud by file type, web page
 visits by users from different countries, financial expenses, etc. Statistics
-data are in the file [data.json](./src/data.json).
+data are in the file [data.json](./src/data/data.json).
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview.jpg"/>
@@ -127,7 +127,7 @@ import data from '/path/to/data.json';
 
 It is necessary to create a component `<FriendList>`, with which we could
 display information about the user's friends. Information about friends is
-stored in the [friends.json](./src/friends.json).
+stored in the [friends.json](./src/data/friends.json).
 
 <div align="center">
     <img src="https://github.com/AndriiDorohov/goit-react-hw-01-components/blob/main/preview2.jpg"/>
@@ -184,8 +184,8 @@ account of the Internet bank.
 </div>
 
 The data for the list is available in JSON format in a file
-[transactions.json](./src/transactions.json). This is an array of objects, each
-object describes one transaction with the following properties:
+[transactions.json](./src/data/transactions.json). This is an array of objects,
+each object describes one transaction with the following properties:
 
 - `id' — unique transaction ID
 - `type' — transaction type
