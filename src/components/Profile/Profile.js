@@ -3,7 +3,7 @@ import './Profile.css'
 const Profile = ({ avatar, username, tag, location, stats }) => {
 	return (<div className="profile">
   <div className="description">
-    <div class="image-container">
+    <div className="image-container">
 	<img
       src={avatar}
       alt="User avatar"
