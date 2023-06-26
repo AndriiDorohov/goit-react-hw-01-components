@@ -1,20 +1,30 @@
 import React from 'react';
-import '../Statistics/Statistics.css';
+import {
+    StatisticsSection,
+    Title,
+    Statlist,
+    Item,
+    Label,
+    Percentage,
+    GenerateRandomColor
+} from './Statistics.styled';
+
 
 const Statistics = ({ title, stats }) => {
-  return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
 
-      <ul className="stat-list">
+    return (
+    <StatisticsSection>
+      <Title>{title}</Title>
+
+      <Statlist>
         {stats.map((stat) => (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
-          </li>
+          <Item key={stat.id} color={GenerateRandomColor()}>
+            <Label>{stat.label}</Label>
+            <Percentage>{stat.percentage}%</Percentage>
+          </Item>
         ))}
-      </ul>
-    </section>
+      </Statlist>
+    </StatisticsSection>
   );
 };
 

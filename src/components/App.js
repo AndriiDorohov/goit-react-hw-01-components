@@ -16,7 +16,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
+      <Statistics title="UPLOAD STATS" stats={data} />
       <Statistics stats={data} />
     </>
   );
