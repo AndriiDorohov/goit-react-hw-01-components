@@ -61,3 +61,60 @@ import user from 'path/to/user.json;
   stats={user.stats}
 />
 ```
+
+# Statistics Section
+
+Create a component `<Statistics>` that would display statistics on the transmitted
+prop. For example, uploads to the cloud by file type, web page visits
+by users from different countries, financial expenses, etc. Statistics data are
+in the file [data.json](./data.json).
+
+![Preview of the Statistics component](./preview.jpg )
+
+## Description of the component
+
+The component must accept two passes `title` and `stats`, which specify
+the title and the statistics object.
+
+- `title` is optional, and if it is not passed, the markup should not be rendered
+the header `<h2>`.
+- `stats` - an array of objects containing information about the statistics element. Can
+have an arbitrary number of elements.
+- You can skip the background color of the statistics element in the design, or create
+a function to generate a random color.
+
+The component should create a DOM element of the following structure.
+
+```html
+<section class="statistics">
+<h2 class="title">Upload stats</h2>
+
+<ul class="stat-list">
+<li class="item">
+<span class="label">.docx</span>
+<span class="percentage">4%</span>
+</li>
+<li class="item">
+<span class="label">.mp3</span>
+<span class="percentage">14%</span>
+</li>
+<li class="item">
+<span class="label">.pdf</span>
+<span class="percentage">41%</span>
+</li>
+<li class="item">
+<span class="label">.mp4</span>
+<span class="percentage">12%</span>
+</li>
+</ul>
+</section>
+```
+
+## Usage example
+
+```js
+import data from '/path/to/data.json';
+
+<Statistics title="Upload stats" stats={data} />;
+<Statistics stats={data} />;
+```
