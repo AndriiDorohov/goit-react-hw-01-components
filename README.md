@@ -167,3 +167,60 @@ import friends from 'path/to/friends.json';
 
 <FriendList friends={friends} />,
 ```
+
+
+# Transaction History
+
+It is necessary to create a transaction history component in the personal account of the Internet
+bank.
+
+![Preview of the TransactionHistory component](./preview3.jpg)
+
+The data for the list is available in JSON format in a file
+[transactions.json](./transactions.json). This is an array of objects, each object
+describes one transaction with the following properties:
+
+- `id' — unique transaction ID
+- `type' — transaction type
+- `amount` - transaction amount
+- `currency' - currency type
+
+## Description of the `<TransactionHistory>` component
+
+It is necessary to create a component `<TransactionHistory>` that accepts one prop
+`items` is an array of transaction objects from 'transactions.json`. The component creates
+a table layout. Each transaction is a row of a table. The example shows
+the markup of two transactions.
+
+```html
+<table class="transaction-history">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Currency</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Invoice</td>
+      <td>125</td>
+      <td>USD</td>
+    </tr>
+    <tr>
+      <td>Withdrawal</td>
+      <td>85</td>
+      <td>USD</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## Usage example
+
+```js
+import transactions from 'path/to/transactions.json';
+
+<TransactionHistory items={transactions} />;
+```
