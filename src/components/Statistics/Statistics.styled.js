@@ -31,7 +31,7 @@ export const Title = styled.h2`
   margin-top: 50px;
 `;
 
-export const Statlist = styled.ul`
+export const StatList = styled.ul`
   width: 500px;
   height: 100px;
   display: flex;

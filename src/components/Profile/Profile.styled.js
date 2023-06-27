@@ -52,7 +52,7 @@ export const StatsList = styled.ul`
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-top: 0px;
+  margin-top: 0;
   border-radius: 0 0px 5px 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 `;
@@ -70,8 +70,8 @@ export const StatItem = styled(Box)` // Використовуємо Box зам�
   }
 
   &:last-child {
-    border-left: none;
     border-radius: 0 0 5px 0;
+    border-left: none;
   }
 `;
 

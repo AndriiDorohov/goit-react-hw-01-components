@@ -14,7 +14,7 @@ export const Item = styled.li`
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: white;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   font-family: Calibri, Arial, sans-serif;
   border-bottom: none;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);`;

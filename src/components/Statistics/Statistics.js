@@ -2,7 +2,7 @@ import React from 'react';
 import {
     StatisticsSection,
     Title,
-    Statlist,
+    StatList,
     Item,
     Label,
     Percentage,
@@ -16,14 +16,14 @@ const Statistics = ({ title, stats }) => {
     <StatisticsSection>
       <Title>{title}</Title>
 
-      <Statlist>
+      <StatList>
         {stats.map((stat) => (
           <Item key={stat.id} color={GenerateRandomColor()}>
             <Label>{stat.label}</Label>
             <Percentage>{stat.percentage}%</Percentage>
           </Item>
         ))}
-      </Statlist>
+      </StatList>
     </StatisticsSection>
   );
 };

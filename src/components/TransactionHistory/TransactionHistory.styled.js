@@ -9,11 +9,8 @@ width: 70%;
   border-radius: 5px 5px 0 0;
   font-family: Calibri, Arial, sans-serif;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: Calibri, Arial, sans-serif;
   ;
   
-
-
   th {
     background-color: hsl(185, 100%, 40%);
     border-bottom: 1px solid #ddd;
@@ -22,7 +19,6 @@ width: 70%;
 	color: white;
     font-size: 24px;
     font-weight: 700;
-
   }
 
   td {
@@ -30,7 +26,6 @@ width: 70%;
     padding: 10px;
     text-align: center;
     font-size: 20px;
-	
   }
 
   tbody tr:nth-child(even) {
@@ -42,6 +37,5 @@ width: 70%;
 
 export const TransactionType = styled.td`
   text-transform: capitalize;
-      text-align: left;
-
+  text-align: left;
 `;
