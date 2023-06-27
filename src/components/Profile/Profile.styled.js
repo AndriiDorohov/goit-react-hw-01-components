@@ -6,7 +6,7 @@ export const ProfileContainer = styled(Box)` // Використовуємо Box
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+	height: 90vh;
 `;
 
 export const Description = styled(Box)` // Використовуємо Box замість div

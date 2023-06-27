@@ -17,7 +17,8 @@ export const Item = styled.li`
   border-radius: 10px;
   font-family: Calibri, Arial, sans-serif;
   border-bottom: none;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);`;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  `;
 
 export const Status = styled.span`
   margin: 40px;
